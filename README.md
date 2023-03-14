@@ -27,26 +27,6 @@ This website Online Auction System using simple authentication for do an auction
 - routes : to manage all routes inside application
 - services : to manage api integrations.
 
-After creation, your project should look like this:
-auction/
-  README.md
-  node_modules/
-  package.json
-  public/
-    index.html
-    favicon.ico
-  src/
-    components/
-    pages/
-    redux/
-    routes/
-    services/
-    App.css
-    App.tsx
-    App.test.js
-    index.css
-    index.tsx
-    logo.svg
 
 For the project to build, these files must exist with exact filenames:
 
@@ -68,6 +48,9 @@ They will not be included in the production build so you can use them for things
 - ReactBootstrap for themed and styling
 - NestJs for rest-api backend scripting
 - Mysql Maria Db for database
+
+# Rest-Api
+For the rest-api you can using script in folder rest-api-nestjs with mysql maria db inside database folder.
 
 # Sample Account
 You can use this account for sample, or you can create new account with register feature.
