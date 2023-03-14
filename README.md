@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# Overview
+Introducing the React and Bootstrap App for Online Auction System Website. A web platform that allows you to easily auction items and also has a deposit feature to add balance when you bid an item. Built using the latest technologies such as React, React-Boostrap for the Front-End page and NestJs for the rest-api. 
+This website Online Auction System using simple authentication for do an auction to the items, and you can also register an account in Register page.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Main Feature
+- Login
+- Register
+- Homepage
+- Homepage : OnGoing auction
+- Homepage : Completed auction
+- Homepage : bid and item
+- Create New Item
+- Deposit
 
-## Available Scripts
+# How To Run
+- First Git Clone Or Download Project
+- npm install or yarn add
+- Just Run: npm start
+- Run white style watching:
+- Windows: npm run dev:windows
+- Linux or MaxOs: npm run dev
 
-In the project directory, you can run:
+# Folder Structure Under Src
+- components : to manage all custom parts and component function like header, wrapper, Confirmation, Alert
+- pages : to manage all main feature script like Login, Register, Homepage
+- redux : to manage store and reducer script for state management
+- routes : to manage all routes inside application
+- services : to manage api integrations.
 
-### `npm start`
+After creation, your project should look like this:
+auction/
+  README.md
+  node_modules/
+  package.json
+  public/
+    index.html
+    favicon.ico
+  src/
+    components/
+    pages/
+    redux/
+    routes/
+    services/
+    App.css
+    App.tsx
+    App.test.js
+    index.css
+    index.tsx
+    logo.svg
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For the project to build, these files must exist with exact filenames:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+public/index.html is the page template;
+src/index.js is the JavaScript entry point.
+You can delete or rename the other files.
 
-### `npm test`
+You may create subdirectories inside src. For faster rebuilds, only files inside src are processed by Webpack.
+You need to put any JS and CSS files inside src, otherwise Webpack won’t see them.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Only files inside public can be used from public/index.html.
+Read instructions below for using assets from JavaScript and HTML.
 
-### `npm run build`
+You can, however, create more top-level directories.
+They will not be included in the production build so you can use them for things like documentation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Technology Used
+- ReactJs Typescript for Frontend Scripting
+- ReactBootstrap for themed and styling
+- NestJs for rest-api backend scripting
+- Mysql Maria Db for database
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Sample Account
+You can use this account for sample, or you can create new account with register feature.
+    username    : **joe@email.com**
+    password    : **12345**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Deployment
+npm run build creates a build directory with a production build of your app. Set up your favorite HTTP server so that a visitor to your site is served index.html, and requests to static paths like /static/js/main.<hash>.js are served with the contents of the /static/js/main.<hash>.js file.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
